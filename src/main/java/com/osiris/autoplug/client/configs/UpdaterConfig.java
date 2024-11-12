@@ -200,6 +200,7 @@ public class UpdaterConfig extends MyYaml {
         plugins_updater_path = put(name, "plugins-updater", "path").setDefValues("./plugins");
         plugins_updater_version = put(name, "plugins-updater", "version").setComments("The Minecraft version to check and download plugins for.",
                 "If left empty, taken from server-updater.version above, if also empty, taken from general.yml, if also empty, taken from server jar.",
+                "If set to latest, taken from server jar.",
                 "Currently only relevant for Modrinth plugins.");
         plugins_updater_async = put(name, "plugins-updater", "async").setDefValues("true").setComments(
                 "Asynchronously checks for updates.",
